@@ -19,7 +19,7 @@ import csf.user.Services.ContactService;
 import csf.user.models.Contact;
 
 @RestController
-@CrossOrigin(origins= "http://localhost:4200/")
+@CrossOrigin(origins= "*")
 @RequestMapping(path="/api")
 public class ContactRestController {
 
