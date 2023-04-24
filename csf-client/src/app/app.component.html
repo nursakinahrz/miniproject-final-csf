@@ -1,0 +1,50 @@
+
+<mat-toolbar color="primary" >
+  <mat-toolbar-row>
+  <h4>Phonebook Manager</h4>
+  <!-- <button mat-raised-button (click)="opened=!opened">Menu</button> -->
+  <button mat-button (click)="opened=!opened"><mat-icon>menu</mat-icon></button>
+  <button mat-button><a routerLink="/home"><mat-icon style="color: azure;">home</mat-icon></a></button>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+    <div class="navbar">
+     <span><button mat-button></button>
+     <!-- <button mat-button>Cart</button></span></div> -->
+     <!-- <button mat-button>Logout</button></span> -->
+     </span>
+
+
+
+<mat-sidenav-container>
+<!-- 3 modes, side, push or over -->
+  <mat-sidenav #sidenav mode="side" [(opened)]="opened">
+
+  <!-- matlist here -->
+    
+  <button mat-flat-button><a routerLink="/view" style="text-decoration: none;">View contacts</a></button>
+  <br>
+  <!-- <button mat-flat-button><a routerLink="/" style="text-decoration: none;">Rice</a></button>
+  <br>
+  <button mat-flat-button><a routerLink="/foods" style="text-decoration: none;">Dessert</a></button>
+  <br> -->
+  </mat-sidenav>
+
+<mat-sidenav-content>
+My Phonebook
+
+
+<!-- router outlet is here -->
+<router-outlet></router-outlet>
+
+</mat-sidenav-content>
+
+</mat-sidenav-container>
+
+<!-- ways for sidenav to open -->
+  <!-- when clicked categories, the routing will display foods available in here -->
+  <!-- <button (click)="sidenav.open()">Open</button> -->
+  <!-- <button (click)="sidenav.close()">Close</button>  -->
+  <!-- <button (click)="sidenav.toggle()">Toggle</button> -->
+
+

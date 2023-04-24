@@ -1,0 +1,41 @@
+
+    <div>
+      <div class="mx-auto w-25 " style="max-width:100%;">
+        <h2 class="text-center mb-3">Add User</h2>
+        <form [formGroup]="form" (ngSubmit)="submit()">
+
+          <mat-form-field appearance="fill">
+            <mat-label>Name</mat-label>
+            <input matInput id="name" formControlName="name" type="text" name="name" class="form-control" required>
+          </mat-form-field>
+          <br>
+          <mat-form-field appearance="fill">
+            <mat-label>Email</mat-label>
+            <input matInput id="email" formControlName="email" type="email" name="email" class="form-control" required>
+          </mat-form-field>
+          <br>
+          <mat-form-field appearance="fill">
+            <mat-label>Phone Number</mat-label>
+            <input matInput id="phone" formControlName="phone" type="phone" name="phone" class="form-control" required>
+          </mat-form-field>
+          <br>
+          <mat-form-field appearance="fill">
+            <mat-label>Address</mat-label>
+            <textarea matInput id="address" formControlName="address" type="address" name="address" class="form-control" required></textarea>
+          </mat-form-field>
+
+    
+         
+          <div class="row">
+            <div class="col-md-12 form-group mb">
+            <button mat-button><input [disabled]="!form.valid" type="submit" value="Submit"></button> 
+            </div>
+          </div>
+
+          <div>
+            
+          </div>
+        </form>
+      </div>
+    </div>
+

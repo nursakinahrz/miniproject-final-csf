@@ -1,0 +1,22 @@
+.navbar {
+    justify-content: space-between;
+
+}
+
+span {
+    padding-right: 1rem;
+}
+
+mat-sidenav-container {
+    height: 100%;
+}
+
+mat-sidenav, mat-sidenav-content {
+    padding: 15px;
+}
+
+mat-sidenav {
+    color: cadetblue;
+    width: 150px;
+
+}
